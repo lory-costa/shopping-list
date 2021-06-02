@@ -13,7 +13,7 @@ npm start # to start the dev server
 You can find the server running on [http://localhost:3000](http://localhost:3000).
 
 
-## User Stories (from highest priority)
+## User Stories
 1. As a user, I want to view my lists
 2. As a user, I want to add new lists that will be saved in the database
 3. As a user, I want to be able to delete lists
