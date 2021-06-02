@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import List from "./List";
 import { v4 as uuidv4 } from "uuid";
-import addIcon from "./../add.png";
+import addIcon from "./../images/add.png";
 
 const baseUrl =
   "https://yyd2hz04yf.execute-api.ap-southeast-2.amazonaws.com/prod/lists";

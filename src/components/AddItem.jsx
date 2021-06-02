@@ -20,7 +20,7 @@ function AddItem(props) {
           name='new-item'
           value={newItem}
           onChange={handleChange}
-          className='px-2 rounded border-2'
+          className='px-2 mt-2 rounded border-2'
           placeholder='Add item'
           autoFocus={true}
         />
