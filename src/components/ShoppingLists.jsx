@@ -5,7 +5,7 @@ import List from "./List";
 const baseUrl =
   "https://yyd2hz04yf.execute-api.ap-southeast-2.amazonaws.com/prod/lists";
 
-function ShoppingLists(props) {
+function ShoppingLists() {
   const [lists, setLists] = useState([]);
   useEffect(() => {
     axios.get(baseUrl).then((response) => {
@@ -14,7 +14,7 @@ function ShoppingLists(props) {
     });
   }, []);
   return (
-    <div className=''>
+    <div className='ml-4'>
       {lists.map((list) => {
         return <List key={list.id} list={list} />;
       })}
