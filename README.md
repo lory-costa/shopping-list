@@ -28,4 +28,4 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 
 
 ## Author
-- Lory Costa - [@lory-costa](https://github.com/lory-costa)
+Lory Costa - [@lory-costa](https://github.com/lory-costa)
