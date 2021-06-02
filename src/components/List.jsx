@@ -12,9 +12,9 @@ function List(props) {
   const { id, title } = props.list;
   const [items, setItems] = useState([]);
 
-  const handleClick = () => {
-    axios.delete(listsUrl, { id });
-  };
+  // const handleClick = () => {
+  //   axios.delete(`http://localhost:3000/lists/${id}`);
+  // };
 
   useEffect(() => {
     axios.get(itemsUrl).then((response) => {
@@ -24,9 +24,11 @@ function List(props) {
   }, []);
   return (
     <>
-      <div className='flex mt-2'>
+      <div className='flex mt-4'>
         <h2 className='text-blue-500 text-xl mr-2'>{title}</h2>
-        <button onClick={handleClick}>
+        <button
+        // onClick={handleClick}
+        >
           <img src={deleteIcon} alt='delete icon' width='15' />
         </button>
       </div>
