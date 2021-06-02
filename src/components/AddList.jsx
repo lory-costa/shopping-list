@@ -24,7 +24,7 @@ function AddList(props) {
           name='new-list'
           value={newList}
           onChange={handleChange}
-          className='px-2 border-blue-500 rounded border-2'
+          className='px-2 border-blue-500 ml-32 rounded border-2'
           placeholder='Create a new list'
           autoFocus={true}
         />
