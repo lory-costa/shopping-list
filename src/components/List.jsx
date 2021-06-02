@@ -6,24 +6,18 @@ import updateIcon from "./../update.png";
 
 const itemsUrl =
   "https://yyd2hz04yf.execute-api.ap-southeast-2.amazonaws.com/prod/items";
-const listsUrl =
-  "https://yyd2hz04yf.execute-api.ap-southeast-2.amazonaws.com/prod/lists";
 
 function List(props) {
   const { id, title } = props.list;
   const [items, setItems] = useState([]);
 
   const handleDelete = () => {
-    axios.delete(listsUrl, { data: { id: id } });
+    props.deleteList(id);
   };
 
   const handleUpdate = () => {
     const newTitle = prompt("Please enter list name");
-    axios.patch(listsUrl, {
-      id: id,
-      updateKey: "title",
-      updateValue: newTitle,
-    });
+    props.updateListTitle(id, newTitle);
   };
 
   useEffect(() => {

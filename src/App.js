@@ -1,5 +1,4 @@
 import React from "react";
-import AddList from "./components/AddList";
 import ShoppingLists from "./components/ShoppingLists";
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
         <h1 className='text-blue-700 text-2xl mb-2 text-center'>
           Shopping Lists
         </h1>
-        <AddList />
         <ShoppingLists />
       </div>
     </div>
