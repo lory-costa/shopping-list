@@ -1,6 +1,6 @@
 # Shopping Lists
 
-> Lists management
+> Lists management - [Live demo](http://shoppinglistchallengebucket.s3-website-ap-southeast-2.amazonaws.com)
 
 
 ### To get started
