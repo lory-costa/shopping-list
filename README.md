@@ -23,6 +23,7 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 
 ## Tech Stack
 **Client:** React, TailwindCSS
+
 **Server:** Lambda, API Gateway, Axios
 
 
