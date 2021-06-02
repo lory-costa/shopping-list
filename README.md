@@ -3,7 +3,7 @@
 > Lists management
 
 
-### From the command line
+### To get started
 
 ```bash
 npm install # to install dependencies
