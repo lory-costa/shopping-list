@@ -23,16 +23,17 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 
 
 ## Things considered but not implemented yet
-With more time available, I would like to: 
-- Make deleting and updating items available, or maybe even have checkboxes for each
-- Have a task that runs a deploy
+### With more time available, I would like to: 
+- Delete and update items, or maybe have checkboxes for each item
+- Order lists and items
 - Write tests
+- Automate the deployment
 
 
 ## Tech Stack
-**Client:** React, TailwindCSS
+**Frontend:** React, TailwindCSS, Axios
 
-**Server:** Lambda, API Gateway, Axios
+**Backend:** AWS Lambda, API Gateway, S3, DynamoDB
 
 
 ## Author
