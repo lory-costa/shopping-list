@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import AddList from "./AddList";
 import List from "./List";
 import { v4 as uuidv4 } from "uuid";
+import addIcon from "./../add.png";
 
 const baseUrl =
   "https://yyd2hz04yf.execute-api.ap-southeast-2.amazonaws.com/prod/lists";
@@ -20,8 +20,9 @@ function ShoppingLists() {
     });
   };
 
-  const addList = async (newList) => {
-    await axios.post(baseUrl, { title: newList, id: uuidv4() });
+  const addList = async () => {
+    const newTitle = prompt("Please enter list name");
+    newTitle && (await axios.post(baseUrl, { title: newTitle, id: uuidv4() }));
     getLists();
   };
 
@@ -40,8 +41,13 @@ function ShoppingLists() {
   };
 
   return (
-    <div className='ml-4'>
-      <AddList addList={addList} />
+    <div className='p-4'>
+      <div className='flex justify-between mb-4'>
+        <h1 className='text-2xl text-center'>Shopping Lists</h1>
+        <button className='px-2 focus:outline-none' onClick={addList}>
+          <img src={addIcon} alt='add list icon' width='15' />
+        </button>
+      </div>
       {lists.map((list) => {
         return (
           <List
