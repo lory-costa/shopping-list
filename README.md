@@ -6,11 +6,19 @@
 ### To get started
 
 ```bash
-npm install # to install dependencies
-npm start # to start the dev server
+npm install 
+npm start 
 ```
 
 You can find the server running on [http://localhost:3000](http://localhost:3000).
+
+
+### To deploy
+
+```bash
+npm run build 
+```
+Drag and drop the content of the build folder into the S3 bucket
 
 
 ## User Stories
@@ -22,7 +30,7 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 - [ ] As a user, I want to delete items from my lists
 
 
-## Things considered but not implemented yet
+## Things considered but not implemented
 ### With more time available, I would like to: 
 - Delete and update items, or maybe have checkboxes for each item
 - Order lists and items
