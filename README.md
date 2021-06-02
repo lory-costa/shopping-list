@@ -14,11 +14,16 @@ You can find the server running on [http://localhost:3000](http://localhost:3000
 
 
 ## User Stories
-1. As a user, I want to view my lists
-2. As a user, I want to add new lists that will be saved in the database
-3. As a user, I want to be able to delete lists
-4. As a user, I want to be able to make changes to my lists
-5. As a user, I want to add and delete items from/to the different lists
+([x]) As a user, I want to view my lists
+([x]) As a user, I want to add new lists that will be saved in the database
+([x]) As a user, I want to be able to delete lists
+([x]) As a user, I want to be able to make changes to my lists
+([x]) As a user, I want to add items to my lists
+([]) As a user, I want to delete items from my lists
+
+
+## Things considered but not implemented yet
+With more time available, I would like to make deleting and updating items available, or maybe even have checkboxes for the items. I would like to write tests, 
 
 
 ## Tech Stack
