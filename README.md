@@ -45,4 +45,4 @@ Drag and drop the content of the build folder into the S3 bucket
 
 
 ## Author
-Lory Costa - [@lory-costa](https://github.com/lory-costa)
+Lory Costa - [LinkedIn Profile](https://www.linkedin.com/in/lory-costa-ab581134/)
